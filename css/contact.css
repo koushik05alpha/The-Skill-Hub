@@ -1,0 +1,179 @@
+.contact__container{
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+/*============= aside ===============*/
+
+.contact__aside{
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.aside__image{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contact__aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact__aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contact__details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact__socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.contact__socials a{
+    background: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+}
+
+.contact__socials a:hover{
+    background: transparent;
+}
+
+/*============= form ===============*/
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 4rem;
+    margin-top: -2rem;
+}
+
+.form__name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    
+}
+
+input{
+    width: 100%;
+    padding: 1rem ;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+
+
+textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.contact__form .btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;    
+}
+
+
+
+
+.field.error .item{
+    border-color: #d93025;
+}
+
+.field .error-txt{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt{
+    display: block;
+}
+
+form .textarea-field .item{
+    resize: none;
+}
+
+form .textarea-field .error-txt{
+    margin-top: -10px;
+}
+
+
+
+/* ============ media queries (tablets) ============*/
+
+@media screen and (max-width:1024px){
+    .contact{
+        padding-bottom: 0;
+    }
+
+    .contact__container{
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .contact__aside{
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact__form{
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+
+/* ============ media queries (phone) ============*/
+
+@media screen and (max-width:600px){
+    .contact__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+        
+    }
+
+    .contact__aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact__form{
+        margin: 0 1.5rem 3rem;
+    }
+
+
+}
